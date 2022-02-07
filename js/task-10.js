@@ -29,4 +29,5 @@ function createBox(ratio) {
 
 function destroyBoxes() {
   boxesRef.innerHTML = '';
+  inputRef.value = '';
 }
