@@ -15,16 +15,16 @@ destroyBtnRef.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
   let string = '';
-  for (let i = 1; i <= amount; i++) {
+  for (let i = 0; i < amount; i++) {
     string += createBox(i);
   }
   boxesRef.innerHTML = string;
 }
 
 function createBox(ratio) {
-  return `<div style="background-color: ${getRandomHexColor()}; height: ${10 * ratio}px; width: ${
-    10 * ratio
-  }px" ></div>`;
+  return `<div style="background-color: ${getRandomHexColor()}; height: ${
+    30 + 10 * ratio
+  }px; width: ${30 + 10 * ratio}px" ></div>`;
 }
 
 function destroyBoxes() {
