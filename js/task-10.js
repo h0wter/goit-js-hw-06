@@ -24,7 +24,7 @@ function createBoxes(amount) {
 function createBox(ratio) {
   return `<div style="background-color: ${getRandomHexColor()}; height: ${
     30 + 10 * ratio
-  }px; width: ${30 + 10 * ratio}px" ></div>`;
+  }px; width: ${30 + 10 * ratio}px"></div>`;
 }
 
 function destroyBoxes() {
