@@ -16,7 +16,7 @@ const images = [
 const gallery = document.querySelector('ul.gallery');
 
 let string = images.reduce(
-  (str, img) => str.concat(`<li><img class='image' src="${img.url}" alt="${img.alt}"/></li>`),
+  (str, img) => (str += `<li><img class='image' src="${img.url}" alt="${img.alt}"/></li>`),
   '',
 );
 
